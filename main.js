@@ -1,5 +1,6 @@
 
 const container=document.querySelector('.container')
+let block_list=['block1','block2','block3'] //a list containing diff css class for our div
 
 
 function genGrid(){
@@ -26,14 +27,14 @@ function genGrid(){
 
     for(i=1;i<=(count**2);i++){
     const div=document.createElement('div');
-    div.classList.add('block');
+    div.classList.add(block_list[Math.floor(Math.random()*block_list.length)]); //choose a random class for the div from the class list
     div.innerText=" ";         
     div.style.height=`${size/count}px`;  // the heigt of every div witin the container will be the size of the container divided by the number of rows
-    div.style.width=`${size/count}px`;   // the width of every div witin the container will be the size of the container divided by the number of rows
+    div.style.width=`${size/count}px`; /// the width of every div witin the container will be the size of the container divided by the number of rows
     container.appendChild(div);
     
 
-}
+}ß
 
 }
 

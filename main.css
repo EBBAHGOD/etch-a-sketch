@@ -39,9 +39,12 @@ body {
     transition: background-color 0.05s ease;
 }
 
-.block:hover {
+.block1:hover {
     background-color: #111827;
 }
+.block2:hover{background-color: rgb(28, 182, 33);}
+.block3:hover{background-color: rgb(206, 42, 170);}
+
 
 
 .caption {
